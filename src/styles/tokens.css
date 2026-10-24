@@ -1,0 +1,116 @@
+/* vaa kannamma — design tokens
+   Layout concept: a quiet journal page. Icon rail on the left, generous ivory margins,
+   petal-cornered cards laid on a soft grid. Light only, by design. */
+:root {
+  color-scheme: light;
+
+  /* palette */
+  --ivory: #fbf6f1;
+  --cream: #f5ece3;
+  --paper: #fffcf9;
+  --blush: #f6dce2;
+  --dusty: #e7b8c3;
+  --rose-mauve: #c48a9b;
+  --mauve: #9c7b8f;
+  --mauve-soft: #ecdfe8;
+  --silver: #c7c3ca;
+  --silver-soft: #e9e7ec;
+  --sage: #a8bea2;
+  --sage-soft: #dee9da;
+  --sage-deep: #4f6b4a;
+  --rose-deep: #7e3b52;
+
+  /* text */
+  --ink: #3d2c35;
+  --ink-soft: #66525d;
+  --ink-faint: #8d7a84;
+
+  /* surfaces & lines */
+  --bg: var(--ivory);
+  --surface: var(--paper);
+  --surface-2: #fbf3ef;
+  --line: #eddfe0;
+  --line-strong: #e0cdd2;
+  --overlay: rgba(61, 44, 53, 0.32);
+
+  /* accent (switchable in Settings) */
+  --accent: #9e5068;
+  --accent-hover: #8a4359;
+  --accent-soft: #f6dce2;
+  --accent-ink: #7e3b52;
+  --on-accent: #fffaf7;
+
+  /* semantic */
+  --warn: #9a4a33;
+  --warn-soft: #f8e5d8;
+  --ok: var(--sage-deep);
+  --danger: #a33f4f;
+  --danger-soft: #f8dde0;
+
+  /* chart tones */
+  --c-rose: #c77a90;
+  --c-mauve: #9c7b8f;
+  --c-sage: #7e9c78;
+  --c-silver: #a8a3af;
+
+  /* event & priority pairs */
+  --exam-bg: #f6dce2;
+  --exam-ink: #86394f;
+  --assign-bg: #ecdfe8;
+  --assign-ink: #694460;
+  --personal-bg: #dee9da;
+  --personal-ink: #435f3d;
+  --study-bg: #e9e7ec;
+  --study-ink: #524d59;
+
+  /* type */
+  --font-display: 'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
+  --font-script: 'Dancing Script', 'Segoe Script', 'Brush Script MT', cursive;
+  --font-sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --font-scale: 1;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: 2rem;
+  --fs-2xl: 2.6rem;
+
+  /* shape & space */
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+  --gap: 20px;
+  --card-pad: 22px;
+  --rail: 78px;
+  --shadow: 0 1px 2px rgba(126, 59, 82, 0.04), 0 10px 28px -18px rgba(126, 59, 82, 0.22);
+  --shadow-lift: 0 2px 4px rgba(126, 59, 82, 0.06), 0 18px 40px -18px rgba(126, 59, 82, 0.32);
+  --focus: 0 0 0 3px var(--paper), 0 0 0 5px var(--accent);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+:root[data-accent='lotus'] {
+  --accent: #b0547a;
+  --accent-hover: #994468;
+  --accent-soft: #f9dbe6;
+  --accent-ink: #8a3558;
+}
+:root[data-accent='mauve'] {
+  --accent: #84607a;
+  --accent-hover: #714f68;
+  --accent-soft: #ecdfe8;
+  --accent-ink: #5f3f56;
+}
+:root[data-accent='sage'] {
+  --accent: #5a7856;
+  --accent-hover: #4b6648;
+  --accent-soft: #dee9da;
+  --accent-ink: #3f5a3b;
+}
+:root[data-density='compact'] {
+  --gap: 14px;
+  --card-pad: 16px;
+}
